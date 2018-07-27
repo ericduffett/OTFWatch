@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="OTFWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="bQL-Dm-dU1">
+                            <items>
+                                <group width="1" height="1" alignment="center" contentMode="center" layout="vertical" id="AgA-Gg-FcN">
+                                    <items>
+                                        <group alignment="center" spacing="5" id="djn-DA-weJ">
+                                            <items>
+                                                <imageView width="30" height="30" alignment="left" image="splat" id="MCm-EA-FiF"/>
+                                                <label alignment="left" verticalAlignment="center" text="12" textAlignment="left" id="GMh-FF-7Gi"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" height="0.5" alignment="center" id="ruI-SI-1XG">
+                                            <items>
+                                                <label alignment="center" verticalAlignment="center" text="88%" textAlignment="center" id="BUR-b9-j98">
+                                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" verticalAlignment="bottom" id="doE-Sw-cBs">
+                                            <items>
+                                                <group width="0.5" height="1" alignment="left" id="M9i-dJ-bqK">
+                                                    <items>
+                                                        <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="heart" contentMode="scaleAspectFit" id="lak-tm-E7r">
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <label alignment="center" verticalAlignment="center" text="125" textAlignment="left" id="Ji8-MV-p2O"/>
+                                                    </items>
+                                                </group>
+                                                <group width="0.5" alignment="left" id="EdV-Mv-Q7A">
+                                                    <items>
+                                                        <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="fire" contentMode="scaleAspectFit" id="FIs-VG-Prk">
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <label alignment="center" verticalAlignment="center" text="530" textAlignment="left" id="gfr-4G-2ep"/>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.15947753070000001" green="0.62537674489999995" blue="0.15914895109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bpmImage" destination="lak-tm-E7r" id="Cj8-xn-wO2"/>
+                        <outlet property="bpmLabel" destination="Ji8-MV-p2O" id="yB6-qP-iYK"/>
+                        <outlet property="calsImage" destination="FIs-VG-Prk" id="gu3-8S-MKX"/>
+                        <outlet property="calsLabel" destination="gfr-4G-2ep" id="mIS-6C-uOU"/>
+                        <outlet property="percentageLabel" destination="BUR-b9-j98" id="ROc-Rz-UId"/>
+                        <outlet property="splatImage" destination="MCm-EA-FiF" id="gPt-H6-sdS"/>
+                        <outlet property="splatLabel" destination="GMh-FF-7Gi" id="ExM-hp-wQR"/>
+                        <outlet property="zoneGroup" destination="bQL-Dm-dU1" id="g9N-oQ-7gB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="OTFWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

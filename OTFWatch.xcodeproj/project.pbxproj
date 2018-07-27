@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95902745210A62B800B5032E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95902744210A62B800B5032E /* AppDelegate.swift */; };
+		95902747210A62B800B5032E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95902746210A62B800B5032E /* ViewController.swift */; };
+		9590274A210A62B800B5032E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95902748210A62B800B5032E /* Main.storyboard */; };
+		9590274C210A62B900B5032E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9590274B210A62B900B5032E /* Assets.xcassets */; };
+		9590274F210A62B900B5032E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9590274D210A62B900B5032E /* LaunchScreen.storyboard */; };
+		95902754210A62BA00B5032E /* OTFWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 95902753210A62BA00B5032E /* OTFWatch WatchKit App.app */; };
+		9590275A210A62BA00B5032E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95902758210A62BA00B5032E /* Interface.storyboard */; };
+		9590275C210A62BA00B5032E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9590275B210A62BA00B5032E /* Assets.xcassets */; };
+		95902763210A62BA00B5032E /* OTFWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95902762210A62BA00B5032E /* OTFWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95902768210A62BA00B5032E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95902767210A62BA00B5032E /* InterfaceController.swift */; };
+		9590276A210A62BA00B5032E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95902769210A62BA00B5032E /* ExtensionDelegate.swift */; };
+		9590276C210A62BA00B5032E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590276B210A62BA00B5032E /* NotificationController.swift */; };
+		9590276E210A62BB00B5032E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9590276D210A62BB00B5032E /* Assets.xcassets */; };
+		95D80C86210B433500DCBA93 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D80C85210B433500DCBA93 /* HealthKit.framework */; };
+		95D80C89210B43B400DCBA93 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D80C88210B43B400DCBA93 /* HealthStore.swift */; };
+		95D80CE7210B6C3E00DCBA93 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D80CE6210B6C3E00DCBA93 /* HealthKit.framework */; };
+		95D80D05210B72D600DCBA93 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CEE210B72D600DCBA93 /* Raleway-Medium.ttf */; };
+		95D80D06210B72D600DCBA93 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CEE210B72D600DCBA93 /* Raleway-Medium.ttf */; };
+		95D80D07210B72D600DCBA93 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CEF210B72D600DCBA93 /* Raleway-SemiBold.ttf */; };
+		95D80D08210B72D600DCBA93 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CEF210B72D600DCBA93 /* Raleway-SemiBold.ttf */; };
+		95D80D0D210B72D600DCBA93 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF2210B72D600DCBA93 /* Raleway-Regular.ttf */; };
+		95D80D0E210B72D600DCBA93 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF2210B72D600DCBA93 /* Raleway-Regular.ttf */; };
+		95D80D13210B72D600DCBA93 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF5210B72D600DCBA93 /* Raleway-Light.ttf */; };
+		95D80D14210B72D600DCBA93 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF5210B72D600DCBA93 /* Raleway-Light.ttf */; };
+		95D80D15210B72D600DCBA93 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF6210B72D600DCBA93 /* Raleway-Black.ttf */; };
+		95D80D16210B72D600DCBA93 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF6210B72D600DCBA93 /* Raleway-Black.ttf */; };
+		95D80D17210B72D600DCBA93 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF7210B72D600DCBA93 /* OFL.txt */; };
+		95D80D18210B72D600DCBA93 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CF7210B72D600DCBA93 /* OFL.txt */; };
+		95D80D21210B72D600DCBA93 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CFC210B72D600DCBA93 /* Raleway-Bold.ttf */; };
+		95D80D22210B72D600DCBA93 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D80CFC210B72D600DCBA93 /* Raleway-Bold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95902755210A62BA00B5032E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95902739210A62B800B5032E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95902752210A62BA00B5032E;
+			remoteInfo = "OTFWatch WatchKit App";
+		};
+		95902764210A62BA00B5032E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95902739210A62B800B5032E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95902761210A62BA00B5032E;
+			remoteInfo = "OTFWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95902776210A62BB00B5032E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95902763210A62BA00B5032E /* OTFWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9590277A210A62BB00B5032E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				95902754210A62BA00B5032E /* OTFWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95902741210A62B800B5032E /* OTFWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTFWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95902744210A62B800B5032E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95902746210A62B800B5032E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95902749210A62B800B5032E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9590274B210A62B900B5032E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9590274E210A62B900B5032E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95902750210A62B900B5032E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95902753210A62BA00B5032E /* OTFWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTFWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95902759210A62BA00B5032E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9590275B210A62BA00B5032E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9590275D210A62BA00B5032E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95902762210A62BA00B5032E /* OTFWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OTFWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95902767210A62BA00B5032E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		95902769210A62BA00B5032E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9590276B210A62BA00B5032E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9590276D210A62BB00B5032E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9590276F210A62BB00B5032E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95902770210A62BB00B5032E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		95D80C85210B433500DCBA93 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		95D80C87210B433500DCBA93 /* OTFWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OTFWatch.entitlements; sourceTree = "<group>"; };
+		95D80C88210B43B400DCBA93 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		95D80CE6210B6C3E00DCBA93 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		95D80CE8210B6C3E00DCBA93 /* OTFWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OTFWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		95D80CEE210B72D600DCBA93 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		95D80CEF210B72D600DCBA93 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		95D80CF2210B72D600DCBA93 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		95D80CF5210B72D600DCBA93 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		95D80CF6210B72D600DCBA93 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		95D80CF7210B72D600DCBA93 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		95D80CFC210B72D600DCBA93 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9590273E210A62B800B5032E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D80C86210B433500DCBA93 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9590275F210A62BA00B5032E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D80CE7210B6C3E00DCBA93 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95902738210A62B800B5032E = {
+			isa = PBXGroup;
+			children = (
+				95D80C88210B43B400DCBA93 /* HealthStore.swift */,
+				95902743210A62B800B5032E /* OTFWatch */,
+				95902757210A62BA00B5032E /* OTFWatch WatchKit App */,
+				95902766210A62BA00B5032E /* OTFWatch WatchKit Extension */,
+				95902742210A62B800B5032E /* Products */,
+				95D80C84210B433500DCBA93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95902742210A62B800B5032E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95902741210A62B800B5032E /* OTFWatch.app */,
+				95902753210A62BA00B5032E /* OTFWatch WatchKit App.app */,
+				95902762210A62BA00B5032E /* OTFWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95902743210A62B800B5032E /* OTFWatch */ = {
+			isa = PBXGroup;
+			children = (
+				95D80C87210B433500DCBA93 /* OTFWatch.entitlements */,
+				95902744210A62B800B5032E /* AppDelegate.swift */,
+				95902746210A62B800B5032E /* ViewController.swift */,
+				95902748210A62B800B5032E /* Main.storyboard */,
+				9590274B210A62B900B5032E /* Assets.xcassets */,
+				9590274D210A62B900B5032E /* LaunchScreen.storyboard */,
+				95902750210A62B900B5032E /* Info.plist */,
+			);
+			path = OTFWatch;
+			sourceTree = "<group>";
+		};
+		95902757210A62BA00B5032E /* OTFWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				95902758210A62BA00B5032E /* Interface.storyboard */,
+				9590275B210A62BA00B5032E /* Assets.xcassets */,
+				9590275D210A62BA00B5032E /* Info.plist */,
+				95D80CE9210B72D600DCBA93 /* Raleway */,
+			);
+			path = "OTFWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		95902766210A62BA00B5032E /* OTFWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				95D80CE8210B6C3E00DCBA93 /* OTFWatch WatchKit Extension.entitlements */,
+				95902767210A62BA00B5032E /* InterfaceController.swift */,
+				95902769210A62BA00B5032E /* ExtensionDelegate.swift */,
+				9590276B210A62BA00B5032E /* NotificationController.swift */,
+				9590276D210A62BB00B5032E /* Assets.xcassets */,
+				9590276F210A62BB00B5032E /* Info.plist */,
+				95902770210A62BB00B5032E /* PushNotificationPayload.apns */,
+			);
+			path = "OTFWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		95D80C84210B433500DCBA93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D80CE6210B6C3E00DCBA93 /* HealthKit.framework */,
+				95D80C85210B433500DCBA93 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95D80CE9210B72D600DCBA93 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				95D80CEE210B72D600DCBA93 /* Raleway-Medium.ttf */,
+				95D80CEF210B72D600DCBA93 /* Raleway-SemiBold.ttf */,
+				95D80CF2210B72D600DCBA93 /* Raleway-Regular.ttf */,
+				95D80CF5210B72D600DCBA93 /* Raleway-Light.ttf */,
+				95D80CF6210B72D600DCBA93 /* Raleway-Black.ttf */,
+				95D80CF7210B72D600DCBA93 /* OFL.txt */,
+				95D80CFC210B72D600DCBA93 /* Raleway-Bold.ttf */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95902740210A62B800B5032E /* OTFWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9590277B210A62BB00B5032E /* Build configuration list for PBXNativeTarget "OTFWatch" */;
+			buildPhases = (
+				9590273D210A62B800B5032E /* Sources */,
+				9590273E210A62B800B5032E /* Frameworks */,
+				9590273F210A62B800B5032E /* Resources */,
+				9590277A210A62BB00B5032E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95902756210A62BA00B5032E /* PBXTargetDependency */,
+			);
+			name = OTFWatch;
+			productName = OTFWatch;
+			productReference = 95902741210A62B800B5032E /* OTFWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95902752210A62BA00B5032E /* OTFWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95902777210A62BB00B5032E /* Build configuration list for PBXNativeTarget "OTFWatch WatchKit App" */;
+			buildPhases = (
+				95902751210A62BA00B5032E /* Resources */,
+				95902776210A62BB00B5032E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95902765210A62BA00B5032E /* PBXTargetDependency */,
+			);
+			name = "OTFWatch WatchKit App";
+			productName = "OTFWatch WatchKit App";
+			productReference = 95902753210A62BA00B5032E /* OTFWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		95902761210A62BA00B5032E /* OTFWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95902773210A62BB00B5032E /* Build configuration list for PBXNativeTarget "OTFWatch WatchKit Extension" */;
+			buildPhases = (
+				9590275E210A62BA00B5032E /* Sources */,
+				9590275F210A62BA00B5032E /* Frameworks */,
+				95902760210A62BA00B5032E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OTFWatch WatchKit Extension";
+			productName = "OTFWatch WatchKit Extension";
+			productReference = 95902762210A62BA00B5032E /* OTFWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95902739210A62B800B5032E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Undaunted Athlete, LLC";
+				TargetAttributes = {
+					95902740210A62B800B5032E = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					95902752210A62BA00B5032E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					95902761210A62BA00B5032E = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9590273C210A62B800B5032E /* Build configuration list for PBXProject "OTFWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95902738210A62B800B5032E;
+			productRefGroup = 95902742210A62B800B5032E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95902740210A62B800B5032E /* OTFWatch */,
+				95902752210A62BA00B5032E /* OTFWatch WatchKit App */,
+				95902761210A62BA00B5032E /* OTFWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9590273F210A62B800B5032E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9590274F210A62B900B5032E /* LaunchScreen.storyboard in Resources */,
+				9590274C210A62B900B5032E /* Assets.xcassets in Resources */,
+				9590274A210A62B800B5032E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95902751210A62BA00B5032E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D80D05210B72D600DCBA93 /* Raleway-Medium.ttf in Resources */,
+				95D80D13210B72D600DCBA93 /* Raleway-Light.ttf in Resources */,
+				95D80D07210B72D600DCBA93 /* Raleway-SemiBold.ttf in Resources */,
+				95D80D21210B72D600DCBA93 /* Raleway-Bold.ttf in Resources */,
+				95D80D17210B72D600DCBA93 /* OFL.txt in Resources */,
+				9590275C210A62BA00B5032E /* Assets.xcassets in Resources */,
+				9590275A210A62BA00B5032E /* Interface.storyboard in Resources */,
+				95D80D0D210B72D600DCBA93 /* Raleway-Regular.ttf in Resources */,
+				95D80D15210B72D600DCBA93 /* Raleway-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95902760210A62BA00B5032E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D80D18210B72D600DCBA93 /* OFL.txt in Resources */,
+				95D80D22210B72D600DCBA93 /* Raleway-Bold.ttf in Resources */,
+				95D80D0E210B72D600DCBA93 /* Raleway-Regular.ttf in Resources */,
+				95D80D06210B72D600DCBA93 /* Raleway-Medium.ttf in Resources */,
+				95D80D16210B72D600DCBA93 /* Raleway-Black.ttf in Resources */,
+				9590276E210A62BB00B5032E /* Assets.xcassets in Resources */,
+				95D80D14210B72D600DCBA93 /* Raleway-Light.ttf in Resources */,
+				95D80D08210B72D600DCBA93 /* Raleway-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9590273D210A62B800B5032E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95902747210A62B800B5032E /* ViewController.swift in Sources */,
+				95D80C89210B43B400DCBA93 /* HealthStore.swift in Sources */,
+				95902745210A62B800B5032E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9590275E210A62BA00B5032E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9590276C210A62BA00B5032E /* NotificationController.swift in Sources */,
+				9590276A210A62BA00B5032E /* ExtensionDelegate.swift in Sources */,
+				95902768210A62BA00B5032E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95902756210A62BA00B5032E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95902752210A62BA00B5032E /* OTFWatch WatchKit App */;
+			targetProxy = 95902755210A62BA00B5032E /* PBXContainerItemProxy */;
+		};
+		95902765210A62BA00B5032E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95902761210A62BA00B5032E /* OTFWatch WatchKit Extension */;
+			targetProxy = 95902764210A62BA00B5032E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95902748210A62B800B5032E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95902749210A62B800B5032E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9590274D210A62B900B5032E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9590274E210A62B900B5032E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		95902758210A62BA00B5032E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95902759210A62BA00B5032E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95902771210A62BB00B5032E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95902772210A62BB00B5032E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95902774210A62BB00B5032E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "OTFWatch WatchKit Extension/OTFWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B44RNZZ4UL;
+				INFOPLIST_FILE = "OTFWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndauntedAthlete.OTFWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		95902775210A62BB00B5032E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "OTFWatch WatchKit Extension/OTFWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B44RNZZ4UL;
+				INFOPLIST_FILE = "OTFWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndauntedAthlete.OTFWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		95902778210A62BB00B5032E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B44RNZZ4UL;
+				IBSC_MODULE = OTFWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "OTFWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndauntedAthlete.OTFWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		95902779210A62BB00B5032E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B44RNZZ4UL;
+				IBSC_MODULE = OTFWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "OTFWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndauntedAthlete.OTFWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9590277C210A62BB00B5032E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OTFWatch/OTFWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B44RNZZ4UL;
+				INFOPLIST_FILE = OTFWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndauntedAthlete.OTFWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9590277D210A62BB00B5032E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OTFWatch/OTFWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B44RNZZ4UL;
+				INFOPLIST_FILE = OTFWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndauntedAthlete.OTFWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9590273C210A62B800B5032E /* Build configuration list for PBXProject "OTFWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95902771210A62BB00B5032E /* Debug */,
+				95902772210A62BB00B5032E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95902773210A62BB00B5032E /* Build configuration list for PBXNativeTarget "OTFWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95902774210A62BB00B5032E /* Debug */,
+				95902775210A62BB00B5032E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95902777210A62BB00B5032E /* Build configuration list for PBXNativeTarget "OTFWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95902778210A62BB00B5032E /* Debug */,
+				95902779210A62BB00B5032E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9590277B210A62BB00B5032E /* Build configuration list for PBXNativeTarget "OTFWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9590277C210A62BB00B5032E /* Debug */,
+				9590277D210A62BB00B5032E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95902739210A62B800B5032E /* Project object */;
+}
